@@ -13,18 +13,13 @@ $result = add($number1, $number2);
 echo 'result of the addition of number '.$number1.' and number '.$number2.' is '.$result.'<br>';
 
 
-function isAdult($user) {
-    if ($user['age'] >= 18) {
-        return $user['firstName'].' is adult<br>';
-    } else {
-        return $user['firstName'].' is young<br>';
+function excerpt($content) {
+    if (strlen($content) > 5) {
+        return substr($content, 0, 5).'...';
     }
+
+    return $content;
 }
 
-$user = [
-    'firstName' => 'Paul',
-    'age' => 19
-];
-
-echo isAdult($user);
-
+$content = 'zefzef zefze fze fze fze fze fz efzefze f';
+echo excerpt($content);

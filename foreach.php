@@ -1,4 +1,20 @@
 <?php
+// godartrobin@gmail.com
+
+
+$tab = [
+    'value1',
+    'value2',
+    'value3',
+    'value4',
+    'value5',
+    'value6',
+];
+
+foreach ($tab as $value) {
+    echo "$value<br>";
+}
+
 
 $articles = [
     'article 1' => [
@@ -25,19 +41,4 @@ foreach ($articles as $key => $value) {
     echo "Article $key<br>";
     echo 'Title: '.$value['title'].'<br>';
     echo 'Content: '.$value['content'].'<br>';
-}
-
-
-
-$tab2 = [
-    'value1',
-    'value2',
-    'value3',
-    'value4',
-    'value5',
-    'value6',
-];
-
-foreach ($tab2 as $value) {
-    echo "$value<br>";
 }
